@@ -48,6 +48,7 @@ enum class Glyph {
     DELETE,
     SHARE,
     CHEVRON_RIGHT,
+    CHEVRON_DOWN,
     ARROW_BACK,
     WAVE,
     SEARCH,
@@ -389,6 +390,15 @@ private fun DrawScope.drawGlyph(glyph: Glyph, tint: Color, s: Float, stroke: Str
                 moveTo(9f * s, 5f * s)
                 lineTo(16f * s, 12f * s)
                 lineTo(9f * s, 19f * s)
+            }
+            drawPath(path, tint, style = stroke)
+        }
+
+        Glyph.CHEVRON_DOWN -> {
+            val path = Path().apply {
+                moveTo(5f * s, 9f * s)
+                lineTo(12f * s, 16f * s)
+                lineTo(19f * s, 9f * s)
             }
             drawPath(path, tint, style = stroke)
         }
