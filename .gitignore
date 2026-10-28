@@ -1,0 +1,23 @@
+# Android / Gradle 构建产物
+.gradle/
+build/
+app/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# 本机配置：含本机 Android SDK 路径，不要提交
+local.properties
+
+# IDE
+.idea/
+*.iml
+
+# 不纳入版本库的产物与临时目录
+dist/
+acl-recovery/
+
+# 系统
+.DS_Store
+Thumbs.db
